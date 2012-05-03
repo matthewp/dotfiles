@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/matthew/TrafficBuilders/vin-decode/modules'
+let g:netrw_dirhist_2='/home/matthew/.config/chromium/Default/IndexedDB/http_atwork.dev_0.indexeddb.leveldb'
+let g:netrw_dirhist_3='/home/matthew/Projects/shallwelunch/libs/agate/libs/underscore'
+let g:netrw_dirhist_4='/home/matthew/Projects/gv-app'
+let g:netrw_dirhist_5='/home/matthew/Projects/new-site/src/new_site/views'
+let g:netrw_dirhist_6='/home/matthew/Projects/my-website/src-cljs'
+let g:netrw_dirhist_7='/home/matthew/Projects/audlibricom/js'
+let g:netrw_dirhist_8='/home/matthew/Projects/gazel/src'
+let g:netrw_dirhist_9='/home/matthew/.dropbox-dist'
