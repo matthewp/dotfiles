@@ -1,8 +1,8 @@
 syntax on
 set number
+colorscheme desert
 
 set shiftwidth=2 tabstop=2 autoindent cindent expandtab
-
 set autochdir
 
 call pathogen#infect()
