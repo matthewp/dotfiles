@@ -1,0 +1,6 @@
+(ns cal.nav
+  (:require [cloact.core :as cloact :refer [atom]]))
+
+(defn navbar []
+  [:nav.collapse.navbar-collapse {:role "navigation"}
+   "foo"])

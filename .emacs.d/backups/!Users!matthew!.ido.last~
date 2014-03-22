@@ -1,0 +1,34 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/matthew/MyCloud/Projects/cal/src/" . "cal/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/matthew/"
+ "/Users/matthew/MyCloud/Projects/cal/src/cal/"
+ "/Users/matthew/MyCloud/Projects/cal/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "1.org"
+ "nav.cljs"
+ "index.html"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/matthew/" (21290 58822 0 0) "VirtualBox VMs/" "tmp/" "Public/" "Projects/" "Pictures/" "Music/" "Movies/" "mediaserver/" "Library/" "lib/" "Downloads/" "dotfiles/" "Documents/" "Desktop/" "Cloud/" "ClientProjects/" "bin/" "Applications/" "1.org" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Matthew’s MacBook Pro-5.0.2" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".unison/" ".Trash/" ".tmux.conf" ".ssh/" ".rnd" ".Projects.swp" ".oh-my-zsh/" ".npmrc" ".npm/" ".node-gyp/" ".marks/" ".m2/" ".local/" ".lein/" ".jspm/" ".ido.last" ".gvimrc" ".gnupg/" ".gitk" ".gitignore_global" ".gitconfig" ".git/" ".gem/" ".emacs.d/" ".DS_Store" ".distlib/" ".cups/" ".config/" ".ClientProjects.swp" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bash_profile" ".bash_history" ".android/" "../" "./")
+
+ ("/Users/matthew/MyCloud/Projects/cal/" (21201 37425 0 0) "target/" "src/" "resources/" "project.clj" "out/" "index.html" "cal.js" "../" "./")
+
+ ("/Users/matthew/MyCloud/Projects/cal/src/" (21200 17276 0 0) "cal/" "../" "./")
+
+ ("/Users/matthew/MyCloud/Projects/cal/src/cal/" (21201 37368 0 0) "nav.cljs" "core.cljs" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

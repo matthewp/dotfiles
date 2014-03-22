@@ -1,20 +1,23 @@
 
 ;; ----- smex-history -----
 (
+ org-mode
+ package-install
+ package-refresh-contents
+ eval-buffer
  revert-buffer
  dired
  next-buffer
- kill-buffer
- package-install
- cd
- 5x5
 )
 
 ;; ----- smex-data -----
 (
- (package-install . 1)
+ (package-install . 3)
  (dired . 55)
  (revert-buffer . 15)
  (kill-buffer . 2)
  (next-buffer . 2)
+ (package-refresh-contents . 3)
+ (eval-buffer . 1)
+ (org-mode . 3)
 )

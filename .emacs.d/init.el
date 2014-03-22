@@ -16,3 +16,8 @@
 
 (add-to-list 'load-path "~/.emacs.d")
 (load "sibilant-mode.el")
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(load-theme 'flatland t)
+
+(global-set-key "\C-cd" 'kill-whole-line)

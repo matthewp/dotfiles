@@ -1,0 +1,12 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script src="out/goog/base.js" type="text/javascript"></script>
+        <!--<script src="http://fb.me/react-0.8.0.js"></script>-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react.min.js"></script>
+        <script src="cal.js" type="text/javascript"></script>
+        <script type="text/javascript">goog.require("cal.core");</script>
+    </body>
+</html>
