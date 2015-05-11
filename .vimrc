@@ -5,7 +5,7 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'bling/vim-airline'
@@ -22,10 +22,11 @@ NeoBundle 'nanotech/jellybeans.vim'
 
 NeoBundle 'jceb/vim-orgmode'
 
-filetype plugin indent on
-
 NeoBundleCheck
 
+ call neobundle#end()
+
+filetype plugin indent on
 syntax on
 set number
 set mouse=a
@@ -42,6 +43,7 @@ set nofoldenable
 set cc=80
 hi ColorColumn guibg=grey17
 
+set guioptions-=r
 
 " ctrlp
 let g:ctrlp_map = ''
@@ -65,3 +67,4 @@ if getline(1) =~ '#!/usr/bin/env node'
 endif
 
 au BufNewFile,BufRead *.stache set filetype=mustache
+au BufNewFile,BufRead *.component set filetype=mustache
