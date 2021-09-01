@@ -1,51 +1,44 @@
-if has('vim_starting')
-  set nocompatible " Be iMproved
-  " Required
-
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+if &compatible
+ set nocompatible
 endif
+" Add the dein installation directory into runtimepath
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
-call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
+if dein#load_state('~/.cache/dein')
+ call dein#begin('~/.cache/dein')
 
-NeoBundle 'bling/vim-airline'
-NeoBundle 'othree/yajs.vim'
-NeoBundle 'groenewege/vim-less'
-NeoBundle 'jlanzarotta/bufexplorer'
-NeoBundle 'mustache/vim-mustache-handlebars'
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'lambdatoast/elm.vim'
-NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'kien/ctrlp.vim'
+ call dein#add('~/.cache/dein')
+ call dein#add('Shougo/deoplete.nvim')
+ call dein#add('pangloss/vim-javascript')
+ call dein#add('editorconfig/editorconfig-vim')
+ call dein#add('kien/ctrlp.vim')
+ call dein#add('leafgarland/typescript-vim')
+ call dein#add('zah/nim.vim')
+ if !has('nvim')
+   call dein#add('roxma/nvim-yarp')
+   call dein#add('roxma/vim-hug-neovim-rpc')
+ endif
 
-NeoBundle 'nanotech/jellybeans.vim'
+ call dein#add('dracula/vim')
 
-NeoBundle 'jceb/vim-orgmode'
-
-NeoBundleCheck
-
- call neobundle#end()
+ call dein#end()
+ call dein#save_state()
+endif
 
 filetype plugin indent on
 syntax on
+color dracula
+
 set number
 set mouse=a
-colorscheme jellybeans
 
 set shiftwidth=2 tabstop=2 autoindent cindent expandtab
 set autochdir
 
 set backspace=indent,eol,start
 
-" Turn off code-folding
-set nofoldenable
-
 set cc=80
-hi ColorColumn guibg=grey17
 
-set guioptions-=r
-
-" ctrlp
 let g:ctrlp_map = ''
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_open_new_file = 'v'
@@ -54,17 +47,4 @@ nnoremap <leader>f :CtrlP<cr>
 nnoremap <leader>m :CtrlPMRUFiles<cr>
 nnoremap <leader>b :CtrlPBuffer<cr>
 nnoremap <f5> :CtrlPClearCache<cr>
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.log,.DS_Store
-
-set nocompatible
-filetype plugin indent on
-
-if did_filetype()
-  finish
-endif
-if getline(1) =~ '#!/usr/bin/env node'
-  setfiletype javascript
-endif
-
-au BufNewFile,BufRead *.stache set filetype=mustache
-au BufNewFile,BufRead *.component set filetype=mustache
+set wildignore+=*/tmp/*,*.so,*swp,*zip,*.log,.DS_Store
